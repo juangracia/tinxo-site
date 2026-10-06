@@ -1,151 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - TINXO</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-        }
-        .last-updated {
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-        .contact {
-            background: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>TINXO Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0A0A0F;
+      --surface: #1A1A2E;
+      --text: #F1F0F5;
+      --text-secondary: #9A98A8;
+      --rose: #F43F5E;
+      --amber: #FBBF24;
+      --border: #2A2A40;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+    .brand {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, var(--rose), var(--amber));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 32px; margin: 0 0 4px; line-height: 1.15; }
+    .effective, .tagline { color: var(--text-secondary); font-size: 16px; margin-bottom: 32px; }
+    h2 { font-size: 20px; margin: 36px 0 10px; }
+    h3 { font-size: 17px; margin: 28px 0 8px; }
+    p, li { color: var(--text); }
+    .lead, .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .lead { border-left: 3px solid var(--amber); }
+    .contact { margin-top: 28px; }
+    a { color: var(--amber); }
+    strong { color: #fff; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    .links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 36px; }
+    .links a {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .links a:hover { border-color: var(--amber); }
+    footer { margin-top: 48px; color: var(--text-secondary); font-size: 14px; border-top: 1px solid var(--border); padding-top: 20px; }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy for TINXO</h1>
-    <p class="last-updated">Last Updated: October 6, 2026</p>
+  <main class="wrap">
+    <span class="brand">TINXO</span>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective date: October 6, 2026</p>
 
-    <h2>1. Introduction</h2>
-    <p>TINXO ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile party game application.</p>
-
-    <h2>2. Information We Collect</h2>
-
-    <h3>2.1 Personal Information</h3>
-    <p><strong>We do not collect any personally identifiable information.</strong> TINXO is designed to work completely offline and does not require accounts, registration, or any personal data.</p>
-
-    <h3>2.2 Game Data</h3>
-    <p>All game data (player names, game settings, preferences) is stored locally on your device using IndexedDB. This data:</p>
-    <ul>
-        <li>Never leaves your device</li>
-        <li>Is not transmitted to any servers</li>
-        <li>Is not accessible to us or any third parties</li>
-        <li>Remains on your device until you delete the app or clear app data</li>
-    </ul>
-
-    <h3>2.3 Anonymous Analytics</h3>
-    <p>We use PostHog for anonymous usage analytics to improve the app. This includes:</p>
-    <ul>
-        <li><strong>What we collect:</strong> App opens, game selections, button clicks, app crashes</li>
-        <li><strong>What we DON'T collect:</strong> Player names, game content, personal information, device identifiers</li>
-        <li><strong>Purpose:</strong> Understanding which features are popular and identifying bugs</li>
-        <li><strong>Data retention:</strong> 90 days</li>
-        <li><strong>Third party:</strong> PostHog (https://posthog.com/privacy)</li>
-    </ul>
-
-    <h3>2.4 In-App Purchases (Premium Version)</h3>
-    <p>In-App Purchases are not currently available but may be offered in future versions. If offered, purchases would be processed through Apple App Store / Google Play Store via RevenueCat:</p>
-    <ul>
-        <li><strong>Payment processing:</strong> Handled entirely by Apple App Store / Google Play Store</li>
-        <li><strong>What RevenueCat would collect:</strong> Purchase receipt, device type, transaction ID</li>
-        <li><strong>What we would see:</strong> Anonymous purchase status (premium unlocked: yes/no)</li>
-        <li><strong>We would not see:</strong> Your name, email, payment method, or any personal information</li>
-        <li><strong>Third party:</strong> RevenueCat (https://www.revenuecat.com/privacy)</li>
-    </ul>
-
-    <h2>3. How We Use Information</h2>
-    <p>The limited anonymous data we collect is used solely to:</p>
-    <ul>
-        <li>Improve app performance and stability</li>
-        <li>Understand which games are most popular</li>
-        <li>Fix bugs and crashes</li>
-        <li>Make decisions about future features</li>
-    </ul>
-
-    <h2>4. Data Sharing</h2>
-    <p>We do not sell, trade, or share your data with third parties, except:</p>
-    <ul>
-        <li><strong>PostHog:</strong> Anonymous analytics data (as described above)</li>
-        <li><strong>RevenueCat:</strong> Purchase verification data (as described above)</li>
-        <li><strong>Legal requirements:</strong> If required by law or to protect our rights</li>
-    </ul>
-
-    <h2>5. Children's Privacy</h2>
-    <p>TINXO is rated 4+ on the App Store and includes a Family Mode for age-appropriate content. We do not knowingly collect information from children under 13. If you believe a child has provided information to us, please contact us immediately.</p>
-
-    <h2>6. Data Security</h2>
-    <p>Since all game data is stored locally on your device and we collect minimal anonymous analytics, security risks are minimal. We use industry-standard practices for the limited data we do collect.</p>
-
-    <h2>7. Your Rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-        <li><strong>Access your data:</strong> All game data is stored locally on your device in the app's storage</li>
-        <li><strong>Delete your data:</strong> Delete the app or clear app data in device settings</li>
-        <li><strong>Opt out of analytics:</strong> Currently not available, but analytics are anonymous and minimal</li>
-        <li><strong>Request information:</strong> Contact us about our data practices</li>
-    </ul>
-
-    <h2>8. International Users</h2>
-    <p>TINXO is available worldwide. Anonymous analytics data may be processed in the European Union where PostHog servers are located. By using the app, you consent to this data transfer.</p>
-
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by:</p>
-    <ul>
-        <li>Updating the "Last Updated" date</li>
-        <li>Posting a notice in the app (for major changes)</li>
-    </ul>
-    <p>Your continued use of TINXO after changes constitutes acceptance of the updated policy.</p>
-
-    <h2>10. Third-Party Services</h2>
-    <p>TINXO uses the following third-party services:</p>
-    <ul>
-        <li><strong>PostHog:</strong> Anonymous analytics - <a href="https://posthog.com/privacy">Privacy Policy</a></li>
-        <li><strong>RevenueCat:</strong> In-app purchase management - <a href="https://www.revenuecat.com/privacy">Privacy Policy</a></li>
-        <li><strong>Sentry:</strong> Crash and error reports (stack traces, app version, device type), no personal information - <a href="https://sentry.io/privacy/">Privacy Policy</a></li>
-    </ul>
-
-    <div class="contact">
-        <h2>11. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy or our data practices, please contact us:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:juanmgracia@gmail.com">juanmgracia@gmail.com</a></li>
-            <li><strong>Support:</strong> <a href="support.html">Support page</a></li>
-        </ul>
-        <p>We will respond to all privacy-related inquiries within 30 days.</p>
-    </div>
-
-    <hr style="margin-top: 40px; border: none; border-top: 1px solid #ddd;">
-    <p style="text-align: center; color: #7f8c8d; font-size: 14px;">
-        © 2026 TINXO. This privacy policy is effective as of February 13, 2026.
+    <p class="lead">
+      TINXO is developed by Juan Gracia. The short version: TINXO has no accounts and does not
+      collect your name, email, or the names of the players you add. Your games stay on your device.
+      The only things that leave your device are anonymous usage analytics, crash reports, and any
+      suggestion you choose to send us. None of it is sold or used for advertising.
     </p>
+
+    <h2>Information stored on your device</h2>
+    <p>TINXO saves some data on your device so the app remembers your groups and settings:</p>
+    <ul>
+      <li>The player names you add, and their colors and order.</li>
+      <li>Your settings (language, Family Mode, intensity, points, sounds).</li>
+      <li>Simple game counters, such as how many games you started and finished.</li>
+    </ul>
+    <p>
+      This data stays in the app's storage on your device. It is not uploaded to us or shared with
+      anyone. You can delete it with <strong>Reset Everything</strong> in Settings, or by deleting the app.
+    </p>
+
+    <h2>Anonymous usage analytics</h2>
+    <p>
+      To see which games people play and to fix problems, TINXO sends a small set of usage events to
+      <a href="https://posthog.com/privacy">PostHog</a>, on servers in the European Union. The events are:
+      app opened (with how many times it has been opened and the date it was first opened), game started
+      (which game and how many players), game finished, and result shared. Each event also includes the app
+      version and the platform (iOS or Android).
+    </p>
+    <ul>
+      <li>Events are linked only to a random ID that the app creates and stores on your device.
+        It is <strong>not</strong> linked to your name, email, Apple ID, Google account, or advertising ID.</li>
+      <li>Events never include player names or the questions and answers from your games.</li>
+      <li>Automatic click tracking and session recording are turned off.</li>
+      <li>Deleting the app removes the random ID.</li>
+    </ul>
+
+    <h2>Crash reports</h2>
+    <p>
+      If the app hits an error, TINXO sends a crash report to <a href="https://sentry.io/privacy/">Sentry</a>,
+      on servers in the European Union. A report contains technical details: the error message, where in the
+      code it happened, the app version, and the device model and operating system version. The app also sends
+      timing data for a sample of sessions so we can find slow screens. Crash reports do not include player
+      names or game content.
+    </p>
+
+    <h2>Suggestions you send</h2>
+    <p>
+      The <strong>Suggestions?</strong> link on the home screen lets you send us a short message. The text
+      you type is sent to us through Sentry. We do not ask for your name or email there, so please do not
+      include personal information in the message. If you want a reply, email us instead.
+    </p>
+
+    <h2>Sharing and ratings</h2>
+    <ul>
+      <li>When you tap share at the end of a game, TINXO opens your device's share sheet. Only what you
+        choose to share goes to the app you pick. TINXO does not see or keep it.</li>
+      <li>After you finish a few games, TINXO may show the standard App Store or Google Play rating
+        prompt. Apple or Google handle that prompt. TINXO does not see your rating.</li>
+    </ul>
+
+    <h2>Network data</h2>
+    <p>
+      When the app sends analytics or a crash report, PostHog and Sentry receive your device's IP address
+      as part of the connection. We do not use it to identify you. The games work with no internet
+      connection at all.
+    </p>
+
+    <h2>Information we do not collect</h2>
+    <p>TINXO does not:</p>
+    <ul>
+      <li>Ask for or collect your name, email address, phone number, or location.</li>
+      <li>Use accounts or require sign-in.</li>
+      <li>Send player names or game content off your device.</li>
+      <li>Show advertising, or track you across other apps and websites.</li>
+      <li>Sell any data.</li>
+    </ul>
+    <p>TINXO has no in-app purchases at this time.</p>
+
+    <h2>Children's privacy</h2>
+    <p>
+      TINXO is rated 4+ and has a Family Mode with kid-friendly content. TINXO does not knowingly collect
+      personal information from anyone, including children. The analytics and crash reports described above
+      contain no personal information.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Delete the data on your device with <strong>Reset Everything</strong> in Settings, or by deleting the app.</li>
+      <li>To ask about the analytics or crash data linked to your device, or to ask us to delete it, email us.</li>
+    </ul>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will update this page and the effective date above.</p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have questions about this policy, contact
+      <a href="mailto:juanmgracia@gmail.com">juanmgracia@gmail.com</a>.
+    </p>
+
+    <footer>
+      &copy; 2026 Juan Gracia. TINXO. &middot; <a href="support.html">Support</a>
+    </footer>
+  </main>
 </body>
 </html>

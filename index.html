@@ -3,28 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
   <title>TINXO, the party game</title>
-  <meta name="description" content="TINXO is a pass-around party game with 7 mini games. Works fully offline, no accounts." />
   <style>
-    body { margin: 0; background: #0a0a0f; color: #f0edf5; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 72px 24px 96px; }
-    h1 { font-size: 44px; margin: 0 0 12px; background: linear-gradient(90deg, #f43f5e, #fbbf24); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .tagline { color: #9a96a8; font-size: 18px; margin-bottom: 36px; }
+    :root {
+      --bg: #0A0A0F;
+      --surface: #1A1A2E;
+      --text: #F1F0F5;
+      --text-secondary: #9A98A8;
+      --rose: #F43F5E;
+      --amber: #FBBF24;
+      --border: #2A2A40;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+    .brand {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, var(--rose), var(--amber));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 32px; margin: 0 0 4px; line-height: 1.15; }
+    .effective, .tagline { color: var(--text-secondary); font-size: 16px; margin-bottom: 32px; }
+    h2 { font-size: 20px; margin: 36px 0 10px; }
+    h3 { font-size: 17px; margin: 28px 0 8px; }
+    p, li { color: var(--text); }
+    .lead, .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .lead { border-left: 3px solid var(--amber); }
+    .contact { margin-top: 28px; }
+    a { color: var(--amber); }
+    strong { color: #fff; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
     .links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 36px; }
-    .links a { padding: 12px 22px; border-radius: 12px; border: 1px solid #2a2735; background: #16141f; color: #f0edf5; text-decoration: none; font-weight: 600; }
-    footer { margin-top: 56px; color: #9a96a8; font-size: 14px; border-top: 1px solid #2a2735; padding-top: 20px; }
+    .links a {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .links a:hover { border-color: var(--amber); }
+    footer { margin-top: 48px; color: var(--text-secondary); font-size: 14px; border-top: 1px solid var(--border); padding-top: 20px; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>TINXO</h1>
-    <p class="tagline">The party game you pass around. 7 mini games, one phone, fully offline.</p>
+  <main class="wrap">
+    <span class="brand">TINXO</span>
+    <h1>The party game you pass around</h1>
+    <p class="tagline">Seven group games on one phone. Add the players, pick a game, and pass the phone.</p>
+
+    <h2>The games</h2>
+    <ul>
+      <li><strong>Truth or Dare</strong>, the classic.</li>
+      <li><strong>Most Likely To...</strong>: vote on who is most likely to do something.</li>
+      <li><strong>Never Have I Ever</strong>: find out what everyone has done.</li>
+      <li><strong>The Impostor</strong>: find the player who does not know the secret word.</li>
+      <li><strong>Forbidden Word</strong>: avoid your word and make the others say theirs.</li>
+      <li><strong>Who's Who</strong>: guess who wrote each answer.</li>
+      <li><strong>TINXO Roulette</strong>: quick random challenges.</li>
+    </ul>
+
+    <h2>How it works</h2>
+    <ul>
+      <li>Plays fully offline. All the content is inside the app.</li>
+      <li>No accounts and no sign-up.</li>
+      <li>Family Mode and two intensity levels, Mild and Normal.</li>
+      <li>In Spanish (Argentina, Mexico, Spain) and English (US, UK).</li>
+    </ul>
+
     <div class="links">
-      <a href="https://apps.apple.com/app/tinxo/id6759184190">App Store</a>
+      <a href="https://apps.apple.com/app/id6759184190">App Store</a>
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="support.html">Support</a>
+      <a href="mailto:juanmgracia@gmail.com">Contact</a>
     </div>
-    <footer>&copy; 2026 Juan Gracia. TINXO.</footer>
-  </div>
+
+    <footer>
+      &copy; 2026 Juan Gracia. TINXO.
+    </footer>
+  </main>
 </body>
 </html>
